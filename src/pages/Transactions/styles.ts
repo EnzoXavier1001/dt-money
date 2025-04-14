@@ -37,3 +37,11 @@ interface PriceHighlightProps {
 export const PriceHighlight = styled.span<PriceHighlightProps>`
     color: ${props => props.variant === 'income' ? props.theme['green-500'] : props.theme['red-300']};
 `
+
+export const TransactionsWrapper = styled.div`
+
+    @media (max-width: 750px) {
+        overflow: scroll;
+        width: 100%;
+    }
+`
