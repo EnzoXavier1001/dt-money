@@ -24,8 +24,8 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 Clone o projeto e acesse a pasta:
 
 ```bash
-git clone https://github.com/seu-usuario/dtmoney.git
-cd dtmoney
+git clone https://github.com//EnzoXavier1001/dt-money.git
+cd dt-money
 ```
 
 Instale as dependências:
