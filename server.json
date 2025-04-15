@@ -55,6 +55,14 @@
       "type": "outcome",
       "createdAt": "2025-04-15T01:27:35.144Z",
       "id": 7
+    },
+    {
+      "description": "teste",
+      "price": 32,
+      "category": "teste",
+      "type": "income",
+      "createdAt": "2025-04-15T01:31:40.490Z",
+      "id": 8
     }
   ]
 }

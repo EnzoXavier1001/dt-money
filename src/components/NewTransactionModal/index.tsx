@@ -5,6 +5,7 @@ import * as z from 'zod'
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTransactions } from "../../hooks/useTransactions";
+import { toast, ToastContainer } from "react-toastify";
 
 const newTransactionFormSchema = z.object({
     description: z.string(),
@@ -36,6 +37,7 @@ export function NewTransactionModal() {
 
     async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
         createTransaction(data)
+        toast.success('Transação criada com sucesso!')
         reset()
     }
 
@@ -94,6 +96,7 @@ export function NewTransactionModal() {
                     </button>
                 </form>
             </Content>
+            <ToastContainer />
         </Dialog.Portal>
     )
 }
