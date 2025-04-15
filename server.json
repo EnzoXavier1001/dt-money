@@ -47,6 +47,14 @@
       "type": "outcome",
       "createdAt": "2025-04-15T01:15:29.940Z",
       "id": 6
+    },
+    {
+      "description": "Doce de banana",
+      "price": 5,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2025-04-15T01:27:35.144Z",
+      "id": 7
     }
   ]
 }

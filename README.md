@@ -1,54 +1,87 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img alt="dtmoney" src="./src/assets/Logo.svg" width="200px" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 💰 dtmoney
 
-Currently, two official plugins are available:
+Aplicação de controle financeiro, desenvolvida durante o bootcamp **Ignite** da [Rocketseat](https://www.rocketseat.com.br/), com o objetivo de cadastrar e listar transações financeiras.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧪 Tecnologias
 
-## Expanding the ESLint configuration
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Styled Components](https://styled-components.com/)
+- [Axios](https://axios-http.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev/)
+- [JSON Server](https://github.com/typicode/json-server)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Como executar
+
+Clone o projeto e acesse a pasta:
+
+```bash
+git clone https://github.com/seu-usuario/dtmoney.git
+cd dtmoney
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Instale as dependências:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+# ou
+yarn
+# ou
+pnpm install
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Inicie a fake API com o JSON Server:
+
+```bash
+npm run server
+# ou
+yarn server
+# ou
+pnpm server
+```
+
+Depois, inicie a aplicação:
+
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+```
+
+A aplicação estará disponível em: `http://localhost:5173`  
+A API estará rodando em: `http://localhost:3000`
+
+## 💡 Funcionalidades
+
+- Cadastro de transações (entrada e saída)
+- Listagem de transações
+- Cálculo automático do saldo
+- Integração com JSON Server para simular API
+
+## 📸 Imagens
+
+Aqui está um gif mostrando a aplicação em funcionamento:
+
+<p align="center">
+  <img alt="demo" src="./src/assets/preview.gif" width="600px">
+</p>
+
+## 📦 Scripts disponíveis
+
+```bash
+# Iniciar o projeto
+pnpm run dev
+
+# Rodar o JSON Server com os dados simulados
+pnpm run backend
 ```
